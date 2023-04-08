@@ -1,9 +1,20 @@
-const SearchSection = () => {
-    return (
-        <div>
-            Here is the Search Section component
-        </div>
-    )
+
+import "../App.css";
+import SearchBar from "./SearchBar";
+import Logo from "../images/google.png";
+import Button from "./Button"
+import Language from "./LanguageLink"
+
+ const SearchSection = () => {
+  return (
+    <main>
+      <img src={Logo} alt="Google logo" className="google-logo" />
+      <SearchBar />
+      <Button />
+      <Language />
+     
+    </main>
+  );
 }
 
 export default SearchSection;

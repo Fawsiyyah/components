@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <div>
-            Here is the Footer component
+            The footer component should be here
         </div>
     )
 }

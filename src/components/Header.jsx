@@ -1,4 +1,5 @@
 import Avatar from "./Avatar";
+import AppLauncherIcon from "./AppsLauncherIcon"
 import MenuItem from "./MenuItem";
 import "../styles/header.css";
 
@@ -8,6 +9,7 @@ const Header = () => {
       <div className="app-header-menu">
         <MenuItem title={"Gmail"} /> 
         <MenuItem title={"Images"} />
+        <AppLauncherIcon />
         <Avatar />
       </div>
     </div>
