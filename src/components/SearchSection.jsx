@@ -8,7 +8,7 @@ import Language from "./LanguageLink"
  const SearchSection = () => {
   return (
     <main>
-      <img src={Logo} alt="Google logo" className="google-logo" />
+      <img src={Logo} alt="Google logo" className="App-logo" />
       <SearchBar />
       <Button />
       <Language />

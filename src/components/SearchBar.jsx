@@ -13,7 +13,7 @@ export default function SearchBar() {
 
   return (
     <>
-      <form className="search-input">
+      <form className="search">
         <icon
           icon="material-symbols:search-rounded"
           className="magnifying-glass"
@@ -22,6 +22,7 @@ export default function SearchBar() {
           type="search"
           name="search"
           className="input-field"
+          placeholder="Search Google or type a url"
           value={search}
           onKeyDown={searchKey}
           onChange={handleSearch}
