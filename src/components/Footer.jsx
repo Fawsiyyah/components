@@ -1,7 +1,9 @@
+import FootNotes from "./FooterText";
+
 const Footer = () => {
     return (
         <div>
-            The footer component should be here
+            <FootNotes />
         </div>
     )
 }

@@ -5,10 +5,10 @@ export default function Language() {
         <div className="language">
             <p>Google offered in: </p>
             <ul className="languages">
-                <li>Hausa</li>
-                <li>Igbo</li>
-                <li>Ede Yoruba</li>
-                <li>Nigerian Pidgin</li>
+                <li className="">Hausa</li>
+                <li className="list">Igbo</li>
+                <li className="list">Ede Yoruba</li>
+                <li className="list">Nigerian Pidgin</li>
             </ul>
         </div>
     );
