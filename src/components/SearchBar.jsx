@@ -3,17 +3,21 @@ import { useState } from "react";
 
 export default function SearchBar() {
   const [search, setSearch] = useState("");
+
   const handleSearch = (e) => {
     e.preventDefault();
-    setSearch(e.target.value);
-    e.target.value = "";
+    setSearch(e.target.elements.search.value);
+    e.target.elements.search.value = "";
   };
 
-  const searchKey = (e) => e.key === "Enter" && handleSearch(e);
+   //const searchKey = (e) => e.key === "Enter" && handleSearch(e);
 
   return (
     <>
-      <form className="search">
+      <form className="search" 
+      value={search}
+      onSubmit={handleSearch}
+      >
         <icon
           icon="material-symbols:search-rounded"
           className="magnifying-glass"
@@ -23,9 +27,7 @@ export default function SearchBar() {
           name="search"
           className="input-field"
           placeholder="Search Google or type a url"
-          value={search}
-          onKeyDown={searchKey}
-          onChange={handleSearch}
+          
         />
         <svg
           className="search-icon"
@@ -77,7 +79,9 @@ export default function SearchBar() {
           </g>
         </svg>
       </form>
-      <span className="search-text">{search && <p>{search}</p>}</span>
+      <span className="">{search && <p>{search}</p>}</span>
+      
+      
     </>
   );
 }
